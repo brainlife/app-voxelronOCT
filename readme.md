@@ -1,19 +1,29 @@
+[![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.346-blue.svg)](https://doi.org/10.25663/brainlife.app.346)
 ##
-## OCT &amp; MAIA Scripts
+## OCT &amp; MAIA Data processing
 
-**Authors**
+## Authors
 
 - Daniel Bullock ([dnbulloc@iu.edu](mailto:dnbulloc@iu.edu))
 - Jasleen Jolly ([jolly@eye.ox.ac.uk](mailto:jasleen.jolly@eye.ox.ac.uk))
 
-**Lab Directors**
+## Lab Directors
 
-- Franco Pestilli ([franpest@indiana.edu](mailto:franpest@indiana.edu)) - Indiana University Bloomington
-- Holly Bridge (holly.bridge@ndcn.ox.ac.uk)  -  University of Oxford
-
-
+- [Franco Pestilli](frakkopesto@gmail.com)
+- [Holly Bridge](holly.bridge@ndcn.ox.ac.uk)
 
 (For MAIA readme, please proceed further down the document)
+
+### Funding Acknowledgement
+brainlife.io is publicly funded and for the sustainability of the project it is helpful to Acknowledge the use of the platform. We kindly ask that you acknowledge the funding below in your publications and code reusing this code.
+
+### Citations
+We kindly ask that you cite the following articles when publishing papers and code using this code. 
+
+1. Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019). [https://doi.org/10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+#### MIT Copyright (c) 2020 brainlife.io The University of Texas at Austin and Indiana University
 
 ## OCT
 
@@ -86,7 +96,6 @@ Therefore, we read 8 layers when no additional layers are added.
 The wrapper,_OCTanalysisWrapper__.m_ , directly calls the following functions:
 
 
-
 | **Function name** | **Function description** | **Variable / Parameter inputs** |
 | --- | --- | --- |
 | parseCsvExport | Provided by Jonathan Oakley, Voxeleron. Allows reading in of segmented thickness measurements and sorting by layer | rawSubjDataDir |
@@ -95,7 +104,6 @@ The wrapper,_OCTanalysisWrapper__.m_ , directly calls the following functions:
 | OCTGroupAnalysisWrapper | Creates group level analysis outputs based on a keyfile identifying group membership. | inputDir,<br/> groupKeyDir,<br/> outputDir |
 
 Several of the variables are simply paths to files or directories containing necessary data/metadata
-
 
 
 | **File/Path variable name** | **Contents** | **Structure/Naming convention** |
